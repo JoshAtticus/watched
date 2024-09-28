@@ -31,13 +31,13 @@
     //first file
     NSString *firstPlistPath = @"/var/mobile/Library/Preferences/com.apple.NanoRegistry.plist";
     [tweak addNewItemsToPlistWithPath:firstPlistPath key:@"minPairingCompatibilityVersion" value:@(1)];
-    //if apple update more watchOS, set maxPairingCompatibilityVersion to higher number (example: 9.5.1 around 27 then +2 for each big version, now lastest is 10.3.1 then it's 35~37)
-    [tweak addNewItemsToPlistWithPath:firstPlistPath key:@"maxPairingCompatibilityVersion" value:@(37)];
+    //if apple update more watchOS, set maxPairingCompatibilityVersion to higher number (example: 9.5.1 around 27 then +2 for each big version, now latest is 11.5 then it's 39~41)
+    [tweak addNewItemsToPlistWithPath:firstPlistPath key:@"maxPairingCompatibilityVersion" value:@(41)];
     [tweak addNewItemsToPlistWithPath:firstPlistPath key:@"IOS_PAIRING_EOL_MIN_PAIRING_COMPATIBILITY_VERSION_CHIPIDS" value:@""];
     [tweak addNewItemsToPlistWithPath:firstPlistPath key:@"minPairingCompatibilityVersionWithChipID" value:@(1)];
 
     //second file
     NSString *secondPlistPath = @"/var/mobile/Library/Preferences/com.apple.pairedsync.plist";
-    //maybe the same as the 37
-    [tweak addNewItemsToPlistWithPath:secondPlistPath key:@"activityTimeout" value:@(35)];
+    //maybe the same as the 41
+    [tweak addNewItemsToPlistWithPath:secondPlistPath key:@"activityTimeout" value:@(41)];
 }
